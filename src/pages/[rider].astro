@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { riders } from '../data/riders'
+
+const { rider } = Astro.params
+
+const info = riders.find((r) => r.id === rider)
+
+if (!info) {
+	return Astro.redirect('/404')
+}
+---
+
+<Layout title={`Rider ${info?.name}`}>
+	<main class='flex items-center justify-center h-screen'>
+		<div class='bg-black h-full w-full'>
+			<div class='flex flex-col items-center'>
+				<div class='relative'>
+					<h1
+						class='mt-12 mb-12 w-full text-4xl font-black text-center text-white'
+						style={`view-transition-name: rider-name-${info?.id}`}
+					>
+						{info?.name}
+					</h1>
+					<div>
+						<img
+							class='max-w-sm w-full h-auto object-cover rounded'
+							src={info?.img}
+							alt={`Rider ${info?.name}`}
+							style={` view-transition-name: rider-${info?.id}`}
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</Layout>
