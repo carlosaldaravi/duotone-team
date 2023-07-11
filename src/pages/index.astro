@@ -1,15 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import Title from '../components/Title.astro'
-import Tabs from '../components/Tabs.svelte'
-import ListOfRiders from '../components/ListOfRiders.svelte';
+import DuotoneTeam from '../components/DuotoneTeam.svelte'
 
 ---
 
 <Layout title='Duotone team riders'>
 	<main class='m-auto max-w-4xl min-w-[300px]'>
 		<Title />
-		<Tabs client:only="svelte" />
-		<!-- <ListOfRiders client:only="svelte" /> -->
+		<DuotoneTeam client:only="svelte" />
 	</main>
 </Layout>
