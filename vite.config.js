@@ -1,6 +1,6 @@
 export default {
 	build: {
-		rollupOptions: {
+		ssr: {
 			external: ['astro:transitions']
 		}
 	}
