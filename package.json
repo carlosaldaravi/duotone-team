@@ -10,11 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/netlify": "latest",
     "@astrojs/svelte": "latest",
     "@astrojs/tailwind": "latest",
     "@tailwindcss/forms": "latest",
     "astro": "latest",
+    "netlify": "^13.1.10",
     "svelte": "latest"
   },
   "devDependencies": {
