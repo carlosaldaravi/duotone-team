@@ -41,4 +41,4 @@
 
 <SearchInput bind:value />
 <Navbar {disciplineSelected} />
-<ListOfRiders {filteredRiders} riderSearched={value} />
+<ListOfRiders {filteredRiders} />
