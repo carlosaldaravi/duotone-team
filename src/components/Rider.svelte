@@ -18,8 +18,6 @@
 </a>
 
 <style>
-	/* Global, entregada tal como está al navegador.
-       Se aplica a todas las etiquetas <h1> de tu sitio web. */
 	@keyframes show {
 		from {
 			opacity: 0;
