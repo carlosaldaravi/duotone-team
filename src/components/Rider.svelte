@@ -16,3 +16,29 @@
 		{name}
 	</h2>
 </a>
+
+<style>
+	/* Global, entregada tal como está al navegador.
+       Se aplica a todas las etiquetas <h1> de tu sitio web. */
+	@keyframes show {
+		from {
+			opacity: 0;
+			scale: 25%;
+		}
+		to {
+			opacity: 1;
+			scale: 100%;
+		}
+	}
+
+	img {
+		view-timeline-name: --image;
+		view-timeline-axis: block;
+
+		animation-timeline: --image;
+		animation-name: show;
+
+		animation-range: entry 25% cover 60%;
+		animation-fill-mode: both;
+	}
+</style>
